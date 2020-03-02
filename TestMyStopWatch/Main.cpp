@@ -21,10 +21,6 @@ int main()
 
 	{
 		auto sw = MyStopWatch(fout, "do some");
-
-		for( int i = 0; i < 2000; i++ )
-		{
-			DoSome();
-		}
+		DoSome();
 	}
 }
