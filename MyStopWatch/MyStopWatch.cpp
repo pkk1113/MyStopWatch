@@ -20,9 +20,11 @@ MyStopWatch::~MyStopWatch()
 	Show("stop");
 }
 
-void MyStopWatch::Show(const char* event)
+unsigned long long  MyStopWatch::Show(const char* event)
 {
-	m_log << m_name << ": " << event << " " << GetMs() << "ms\n";
+	auto ms = GetMs();
+	m_log << m_name << ": " << event << " " << ms << "ms\n";
+	return ms;
 }
 
 unsigned long long MyStopWatch::GetMs()

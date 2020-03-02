@@ -8,7 +8,7 @@ public:
 	MyStopWatch(std::ostream& log, const char* name =  "stopwatch");
 	~MyStopWatch();
 
-	void Show(const char* event = "show");
+	unsigned long long Show(const char* event = "show");
 
 private:
 	unsigned long long GetMs();
